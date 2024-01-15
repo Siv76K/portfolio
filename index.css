@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+body{
+    font-size: 20px;
+    font-family: "Fira Code", monospace;
+    color: #483838;
+}
+
+.nav{
+    height: 200px;
+    background-color: #D2D79F;
+    border-radius: 0% 0% 70% 30% / 0% 0% 70% 39% ;
+}
+
+.blob-nav{
+    height: 200px;
+    background-color: #D2D79F;
+    border-radius: 0% 88% 12% 88% / 28% 24% 76% 72%  ;
+    position: relative;
+}
+
+.menu, .lnk{
+    display: inline-block;
+    margin: 30px; 
+}
+
+.lnk{
+    float: left;
+    margin-left: 50px;
+}
+
+.menu{
+    float: right;
+    margin-right: 50px;
+}
+
+.me{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.me img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 74% 26% 30% 70% / 69% 42% 58% 31%  ;
+}
+
+.blob-2{
+    height: 290px;
+    width: 290px;
+    background-color: #D2D79F;
+    border-radius: 72% 28% 34% 66% / 42% 73% 27% 58% ;
+}
+.blob-1{
+    height: 300px;
+    width: 300px;
+    background-color: #42855B;
+    border-radius: 27% 73% 62% 38% / 69% 47% 53% 31% ;
+}
+
+.me-para{
+    width: 600px;
+    margin-left: 100px;
+}
+
+h1{
+    font-weight: 500;
+}
+h2{
+    font-weight: 400;
+}
+
+.learnt{
+    background-color: #42855B;
+    height: 50px;
+    color: #D2D79F;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 1.5em;
+    width: 60%;
+    margin: 200px 20%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.projects>h2{
+    text-align: center;
+    font-size: 40px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px;
+    grid-auto-rows: 400px;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+.project{
+    background-color: grey;
+    width: 400px;
+    height: 400px;
+    box-shadow: 2px 0 0 1px rgba(0, 0, 0, 0.315);
+}
+
+.msg{
+    background-color: #D2D79F;
+    height: 500px;
+    margin: auto;
+    margin-top: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #42855B;
+}
+.msg>img{
+    height: 500px;
+}
+.fun{
+    width: 800px;
+    margin-left: 100px;
+}
+
+footer{
+    background-color: #42855B;
+    height: fit-content;
+    width: 100%;
+    margin-top: 400px;
+    display: inline-block;
+    color: #90B77D;
+}
+.hire{
+    float: left;
+    margin-left: 100px;
+}
+h3{
+    font-weight: 500;
+    font-size: 30px;
+}
+.copy{
+    float: right;
+    margin: 100px 100px;
+}
+
+.project>img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+@media (max-width: 750px) {
+    .nav, .blob-nav{
+        height: 100px;
+    }
+    .me{
+        flex-direction: column;
+        align-items: center;
+    }
+    .me-para{
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .learnt{
+        grid-template-columns: 100%;
+        gap: 20px;
+        height: fit-content;
+        padding: 10px 0;
+    }
+    .still{
+        display: none;
+    }
+
+    .gallery{
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
+    .project{
+        margin-bottom: 50px;
+        width: 300px;
+        height: 300px;
+    }
+    .msg{
+        flex-direction: column;
+        height: fit-content;
+        margin: auto;
+    }
+    .fun{
+        width: 100%;
+        margin:auto;
+    }
+    .msg>img{
+        height: 300px;
+        margin-top: 40px;
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+
+    .hire{
+        float: none;
+        margin-left: 20px;
+    }
+
+    .copy{
+        float: none;
+        margin: 10px 100px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 850px){
+    .gallery{
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px;
+    }
+    .project{
+        width: 300px;
+        height: 300px;
+    }
+    .msg>img{
+        height: 300px;
+    }
+    .copy{
+        float: right;
+        margin: 100px 10px;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1050px){
+    .msg, .msg>img{
+        height: 400px;
+    }
+}
